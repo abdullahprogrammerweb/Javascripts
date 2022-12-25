@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>First elemnts</li>
+        <li>Second element</li>
+        <li>Third element</li>
+        <li>Fourth element</li>
+    </ul>
+    <script>
+        // Root node or elemnts node Every node has exactly one parent, except the root (which has no parent)
+        // console.log(document.documentElement) // This is the way to acess root node
+        // console.log(document.head) // this is the way to acess the head
+        // console.log(document.body) // this is the way to acess the body
+        // console.log(document.body.children)//this is the way to acess the all children of the body
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        // console.log(document.body.childNodes)
+        // // console.log(document.body.children[0])//this is the way to acess the no 1  children of the body
+        // console.log(document.body.children[1])//this is the way to acess the no 2 children of the body
+
+        // sibling in javascript
+
+         let siblings=document.body.children[0]
+         console.log(siblings)
+         let sibling=document.body.children[0]//this is the method of aceessing the children 
+        console.log(document.body.children[0].textContent) // this is another way to acess the children without variable
+        const firstli=sibling.children[0]
+        const secondli=sibling.children[1]
+        const thirdli=sibling.children[2]
+        const fourthli=sibling.children[3]
+        // const fifthli=sibling.children
+        // console.log(sibling.nextElementSibling)
+        // console.log(sibling.textContent)
+        // console.log(sibling)
+        console.log(secondli.previousElementSibling.textContent)
+        console.log(thirdli.previousElementSibling.textContent)
+        
+        // console.log(fourthli.previousElementSibling.textContent)
+        // console.log(thirdli.nextElementSibling.textContent)
+        
+        // console.log(sibling) input is ul
+        // cosnsole.log(sibling) input array but not an array
+        // console.log(firstli) input is li
+        // console.log(fourthli) input is li
+    
+        // const secondl=ul.children[1] error
+        // console.log(secondl) this is show the error that ul is not define abive method is right
+       
+    </script>
+</body>
+</html>

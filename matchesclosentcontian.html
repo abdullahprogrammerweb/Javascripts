@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" id="id1">This is elments 1 <span id="span1">This is span 1 </span>  </div>
+    <div class="box" id="id2">This is elments 2</div>
+    
+</body>
+<script>
+    // console.log(id1)
+    // let id1=document.getElementById("id1")
+    // console.log(id1)
+    // console.log(id1.matches(".class")) // result is the false becuse not find .class
+    // console.log(id1.matches(".box")) // result is true find box class
+    // console.log(span1.closest(".box"))
+    let con =document.getElementById("span1")
+    console.log(id1.contains(con))
+    console.log(con.contains(con))
+    console.log(con.contains("id1"))
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    outer html
+    <div class="class">
+        Iam the start of the container
+      <div id="first"> hey Iam the programmer</div>
+      Iam the end of the constainer
+    </div>
+    outer html
+</body>
+</html>
+<script>
+    let a=document.getElementsByTagName('div')[0]
+    // a.innerHTML=a.innerHTML+ "<h1>THis is abdullah</h1>";
+    let div= document.createElement('div')
+    div.innerHTML= "<h1>This is abdullah</h1>";
+    // a.append(div)
+    // a.prepend(div)
+    // a.before(div)
+    // a.after(div)
+    a.replaceWith(div)
+    </script>
